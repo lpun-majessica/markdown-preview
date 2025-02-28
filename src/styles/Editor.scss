@@ -1,0 +1,22 @@
+@use "../assets/colors" as color;
+
+.editor-container {
+	width: 98%;
+	height: 94%;
+}
+
+.editor-field {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	padding: 1.2rem 1.6rem;
+	border-radius: 8px;
+	resize: none;
+	color: color.$text-color;
+	border: 1px solid color.$grey;
+	background-color: transparent;
+	font-family: monospace;
+	font-size: 1.4rem;
+	letter-spacing: 0;
+	line-height: 1.45;
+}

@@ -1,0 +1,17 @@
+@use "../assets/colors" as color;
+
+.resize-handle {
+	width: 1vw;
+	min-width: 0.7rem;
+	max-width: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.handle-icon {
+	background-color: color.$text-color;
+	width: 60%;
+	height: 3rem;
+	border-radius: 40px;
+}

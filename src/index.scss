@@ -1,0 +1,14 @@
+@use "./styles/App";
+@use "./styles/Window";
+@use "./styles/Editor";
+@use "./styles/Previewer";
+@use "./styles/ResizeHandle";
+
+@use "./assets/colors" as color;
+
+:root {
+	background-color: color.$background;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

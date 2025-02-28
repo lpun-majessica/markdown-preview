@@ -1,0 +1,88 @@
+#previewer-content {
+	width: 100%;
+	min-width: 5vw;
+	height: 100%;
+	line-height: 1.75;
+	color: aliceblue;
+	padding: 0.3% 1%;
+
+	*:not(h1, h2, h3, h4, h5, h6) {
+		font-size: 1.5rem;
+	}
+
+	a {
+		color: #44dddd;
+		text-decoration: none;
+		font-size: 1.6rem;
+	}
+	a:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+	a:visited {
+		color: #966fd6;
+	}
+
+	code {
+		font-family: monospace;
+		border-radius: 3px;
+	}
+	code:not(pre code) {
+		background-color: #414141;
+		padding: 0.1rem 0.5rem;
+	}
+	pre {
+		background-color: #414141;
+		margin: 1rem;
+		padding: 0.5rem 1.3rem;
+		white-space: pre-wrap;
+		word-wrap: break-word;
+		border-radius: 3px;
+	}
+
+	blockquote {
+		color: #818181;
+		margin: 1.75rem 1.5rem;
+		padding-left: 1.5rem;
+		border-left: 0.5rem solid #818181;
+	}
+
+	table {
+		border: 1px solid #414141;
+		border-collapse: collapse;
+		table-layout: fixed;
+		width: 100%;
+		margin: auto;
+	}
+	table th,
+	table td,
+	table tr {
+		border: 1px solid #414141;
+		padding: 0.5rem 1rem;
+		white-space: pre-wrap;
+		word-wrap: break-word;
+	}
+
+	hr {
+		margin: 1rem;
+		border: 1px solid #717171;
+	}
+
+	@for $i from 1 through 6 {
+		$base-size: 3rem;
+		$base-margin: 0.5rem;
+
+		h#{$i} {
+			font-size: calc((10 - $i + 1) / 10) * $base-size;
+			margin-top: calc((10 - $i + 1) / 10) * $base-margin * 2;
+			margin-bottom: calc((10 - $i + 1) / 10) * $base-margin;
+			@if $i <= 2 {
+				border-bottom: 1px solid #414141;
+			}
+		}
+
+		h#{$i} > * {
+			font-size: calc((10 - $i + 1) / 10) * $base-size;
+		}
+	}
+}
