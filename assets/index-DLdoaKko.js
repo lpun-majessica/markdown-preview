@@ -50,7 +50,7 @@ Error generating stack: `+l.message+`
 <br>
 <center>
     <a href="https://github.com/lpun-majessica">
-        <img src="https://img.shields.io/static/v1?logo=github&label=co-maintainer&message=lpun-majessica&color=3EAAAF" >
+        <img src="https://img.shields.io/static/v1?logo=github&label=GitHub&message=lpun-majessica&color=3EAAAF" >
     </a>
 </center>
 
