@@ -11,3 +11,9 @@
 	height: 98vh;
 	margin: 1vh 1vw;
 }
+
+@media screen and (max-width: 650px) {
+	* {
+		font-size: calc(100vw * 0.015);
+	}
+}
